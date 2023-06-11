@@ -1,0 +1,270 @@
+.signIn {
+    position: relative;
+    width: 428px;
+    height: 926px;
+    background: #212832;
+}
+
+.topLogo {
+    position: absolute;
+    width: 139px;
+    height: 91.92px;
+    left: 146px;
+    top: 37.5px;
+}
+
+.Greet {
+    position: absolute;
+    left: 26px;
+    top: 179px;
+}
+
+.Greet h1 {
+    font-family: Inter;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.emailH1 {
+    position: absolute;
+    width: 121px;
+    height: 19px;
+    left: 26px;
+    top: 218px;
+}
+
+.emailH1 h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    color: #8CAAB9;;
+}
+
+.emailInput {
+    position: absolute;
+    width: 376px;
+    height: 58px;
+    left: 26px;
+    top: 253px;
+    background: #455A64;
+}
+
+.emailInput img {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 18px;
+    top: 17px;
+}
+
+
+.emailInput input {
+    position: absolute;
+    width: 179px;
+    height: 19px;
+    left: 68px;
+    top: 19px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    border-radius: 1px;
+    background: #455A64;
+    color: white;
+}
+
+.passH1 {
+    position: absolute;
+    width: 83px;
+    height: 19px;
+    left: 26px;
+    top: 338px;
+}
+
+.passH1 h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    color: #8CAAB9;
+}
+
+.passField {
+    position: absolute;
+    width: 376px;
+    height: 58px;
+    left: 26px;
+    top: 373px;
+    background: #455A64;
+}
+
+.passField .left {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 18px;
+    top: 17px;
+}
+
+.passField input {
+    position: absolute;
+    top: 19px;
+    left: 68px;
+    font-family: 'Inter';
+    font-style: normal;
+    background: #455A64;
+    color: white;
+}
+
+.passField .right {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 334px;
+    top: 17px;
+}
+
+.forgotPass {
+    position: absolute;
+    width: 138px;
+    height: 19px;
+    left: 264px;
+    top: 442px;
+}
+
+.forgotPass button {
+    color: #8CAAB9;
+    background-color: rgba(28,28,28,0);
+}
+
+.loginButton {
+    position: absolute;
+    width: 376px;
+    height: 67px;
+    left: 26px;
+    top: 499px;
+    background: #FED36A;
+}
+
+.loginButton button {
+    position: absolute;
+    width: 376px;
+    height: 67px;
+    background: #FED36A;
+    border-radius: 0px;
+}
+
+.loginButton button span {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #000000;
+}
+
+.OtherLoginLine .line1 {
+    position: absolute;
+    width: 111px;
+    height: 0px;
+    left: 26px;
+    top: 613px;
+    border: 1px solid #8CAAB9;
+}
+
+.OtherLoginLine span {
+    position: absolute;
+    width: 127px;
+    height: 19px;
+    left: 150px;
+    top: 603px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #8CAAB9;
+}
+
+.OtherLoginLine .line2 {
+    position: absolute;
+    width: 111px;
+    height: 0px;
+    left: 291px;
+    top: 613px;
+    border: 1px solid #8CAAB9;
+}
+
+
+.googleLogin {
+    box-sizing: border-box;
+    position: absolute;
+    width: 380px;
+    height: 71px;
+    left: 26px;
+    top: 659px;
+    border: 2px solid #FFFFFF;
+}
+
+.googleLogin button {
+    position: absolute;
+    width: 376px;
+    height: 67px;
+    background: #212832;
+}
+
+.googleLogin button img {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 139px;
+    top: 24px;
+}
+
+.googleLogin button span {
+    position: absolute;
+    width: 62px;
+    height: 24px;
+    top: 22px;
+    left: 175px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+
+
+.signUp {
+    position: absolute;
+    width: 243px;
+    height: 19px;
+    left: 93px;
+    top: 751px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.signUp span {
+    color: #8CAAB9;
+}
+.signUp button {
+    color: #FED36A;
+    background: #212832;
+}

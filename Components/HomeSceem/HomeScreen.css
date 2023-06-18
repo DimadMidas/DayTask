@@ -1,0 +1,832 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+    margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+.HomeScreen {
+    position: relative;
+    width: 428px;
+    height: 926px;
+    background: #212832;
+}
+
+.Title {
+    position: absolute;
+    width: 179px;
+    height: 28px;
+    left: 22px;
+    top: 46.14px;
+}
+
+.Title h1 {
+    position: absolute;
+    width: 87px;
+    height: 19px;
+    font-weight: 500;
+    font-size: 11.7857px;
+    line-height: 19px;
+    color: #FED36A;
+}
+
+.Title h2 {
+    position: absolute;
+    width: 179px;
+    height: 46.14px;
+    top: 18.4px;
+    font-family: 'Pilat Extended';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22.29px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.Title img {
+    position: absolute;
+    width: 47px;
+    height: 48px;
+    left: 331px;
+}
+
+.SearchBar {
+    position: absolute;
+    width: 311px;
+    height: 58px;
+    left: 22px;
+    top: 109px;
+}
+
+.SearchTask {
+    position: absolute;
+    width: 311px;
+    height: 58px;
+    background: #455A64;
+}
+.SearchTask img {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 18px;
+    top: 17px;
+}
+.SearchTask input {
+    position: absolute;
+    width: 180px;
+    height: 22px;
+    left: 58px;
+    top: 19px;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0);
+    color: #6F8793;
+}
+
+.Setting {
+    position: absolute;
+    width: 57px;
+    height: 58px;
+    left: 327px;
+    background: #FED36A;
+}
+
+.Setting img {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 17px;
+    top: 17px;
+}
+
+.Tasks {
+    position: absolute;
+    width: 563px;
+    height: 216px;
+    left: 22px;
+    top: 201px;
+
+}
+
+.TitleTasks {
+    position: absolute;
+    width: 168px;
+    height: 28px;
+}
+
+.TitleTasks h1 {
+    position: absolute;
+    width: 168px;
+    height: 28px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.TitleTasks span {
+    position: absolute;
+    width: 50px;
+    left: 334px;
+    height: 28px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: right;
+    color: #FED36A;
+}
+
+
+.OneTasks {
+    position: absolute;
+    width: 183px;
+    height: 175px;
+    top: 41px;
+    border: 1px solid;
+    background-color: #FED36A;
+}
+
+.OneTasks h1 {
+    position: absolute;
+    width: 164px;
+    height: 77px;
+    left: 10px;
+    top: 7px;
+    font-family: Pilat Extended;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.OneTasks h2 {
+    position: absolute;
+    width: 81px;
+    height: 17px;
+    left: 10px;
+    top: 102px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    color: #212832;
+}
+
+.OneTasks .one-img {
+    box-sizing: border-box;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 102px;
+    top: 100px;
+}
+
+.OneTasks .two-img {
+    box-sizing: border-box;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 115px;
+    top: 100px;
+}
+.OneTasks .three-img {
+    box-sizing: border-box;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 128px;
+    top: 100px;
+}
+.OneTasks .four-img {
+    box-sizing: border-box;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 141px;
+    top: 100px;
+}
+
+.OneTasks .five-img {
+     box-sizing: border-box;
+     position: absolute;
+     width: 20px;
+     height: 20px;
+     left: 154px;
+     top: 100px;
+ }
+
+.OneTasks .StatusTasks {
+    position: absolute;
+    width: 58px;
+    height: 17px;
+    left: 0.1px;
+    top: 132px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    color: #212832;
+}
+
+.OneTasks span {
+    position: absolute;
+    width: 24px;
+    height: 17px;
+    left: 150px;
+    top: 132px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 9px;
+    line-height: 16px;
+    text-align: right;
+    color: #000000;
+}
+
+.OneTasks .progress {
+    position: absolute;
+    width: 163px;
+    height: 6px;
+    left: 11px;
+    top: 152px;
+    background: #212832;
+    border-radius: 8px;
+}
+
+.TwoTasks {
+    position: absolute;
+    width: 183px;
+    height: 175px;
+    left: 190px;
+    top: 41px;
+    background: #455A64;
+}
+
+.TwoTasks h1 {
+    position: absolute;
+    width: 157px;
+    height: 77px;
+    left: 11px;
+    top: 7px;
+    font-family: 'Pilat Extended';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+.TwoTasks h2 {
+    position: absolute;
+    width: 81px;
+    height: 17px;
+    left: 11px;
+    top: 102px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.TwoTasks .one-img {
+    box-sizing: border-box;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 102px;
+    top: 100px;
+}
+
+.TwoTasks .two-img {
+    box-sizing: border-box;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 115px;
+    top: 100px;
+}
+.TwoTasks .three-img {
+    box-sizing: border-box;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 128px;
+    top: 100px;
+}
+.TwoTasks .four-img {
+    box-sizing: border-box;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 141px;
+    top: 100px;
+}
+
+.TwoTasks .five-img {
+    box-sizing: border-box;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 154px;
+    top: 100px;
+}
+
+
+
+.TwoTasks .StatusTasks {
+    position: absolute;
+    width: 58px;
+    height: 17px;
+    left: 11px;
+    top: 132px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+.TwoTasks span {
+    position: absolute;
+    width: 24px;
+    height: 17px;
+    left: 151px;
+    top: 132px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 9px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.TwoTasks .progress {
+    position: absolute;
+    width: 163px;
+    height: 6px;
+    left: 12px;
+    top: 152px;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+
+.OngoingProjects {
+    position: absolute;
+    width: 384px;
+    height: 125px;
+    left: 22px;
+    top: 451px;
+    color: #FED36A;
+}
+
+.TitleProjects h1 {
+    position: absolute;
+    width: 167px;
+    height: 28px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.TitleProjects span {
+    position: absolute;
+    width: 50px;
+    height: 28px;
+    left: 334px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FED36A;
+}
+
+.ProjectsList {
+    position: absolute;
+    width: 384px;
+    height: 125px;
+    top: 44px;
+}
+
+.ProjectsList .OneProjects {
+    position: absolute;
+    width: 384px;
+    height: 125px;
+    background: #455A64;
+}
+
+.OneProjects h1 {
+    position: absolute;
+    width: 306px;
+    height: 26px;
+    left: 10px;
+    top: 9px;
+    font-family: 'Pilat Extended';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.OneProjects h2 {
+    position: absolute;
+    width: 102px;
+    height: 17px;
+    left: 10px;
+    top: 42px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.OneProjects .DataProjects {
+    position: absolute;
+    width: 119px;
+    height: 17px;
+    left: 10px;
+    top: 98px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.OneProjects .progress {
+    position: absolute;
+    width: 23px;
+    height: 17px;
+    left: 327px;
+    top: 75px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.OneProjects .one-img {
+    box-sizing: border-box;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 11px;
+    top: 65px;
+}
+.OneProjects .two-img {
+    box-sizing: border-box;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 24px;
+    top: 65px;
+}
+.OneProjects .three-img {
+    box-sizing: border-box;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 37px;
+    top: 65px;
+}
+
+
+.OneProjects .progressImg {
+    box-sizing: border-box;
+    position: absolute;
+    width: 59px;
+    height: 59px;
+    left: 309px;
+    top: 54px;
+}
+
+.ProjectsList .TwoProjects {
+    position: absolute;
+    width: 384px;
+    height: 125px;
+    top: 140px;
+    background: #455A64;
+}
+
+.TwoProjects h1 {
+    position: absolute;
+    width: 323px;
+    height: 26px;
+    left: 10px;
+    top: 9px;
+    font-family: 'Pilat Extended';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.TwoProjects h2 {
+    position: absolute;
+    width: 102px;
+    height: 17px;
+    left: 10px;
+    top: 42px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.TwoProjects .DataProjects {
+    position: absolute;
+    width: 112px;
+    height: 17px;
+    left: 10px;
+    top: 96px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.TwoProjects .one-img {
+    box-sizing: border-box;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 11px;
+    top: 65px;
+}
+.TwoProjects .two-img {
+    box-sizing: border-box;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 24px;
+    top: 65px;
+}
+.TwoProjects .three-img {
+    box-sizing: border-box;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 37px;
+    top: 65px;
+}
+
+.TwoProjects .progressImg {
+    box-sizing: border-box;
+    position: absolute;
+    width: 59px;
+    height: 59px;
+    left: 309px;
+    top: 54px;
+}
+
+.TwoProjects .progress {
+    position: absolute;
+    width: 24px;
+    height: 17px;
+    left: 326px;
+    top: 75px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.bottom {
+    position: absolute;
+    width: 428px;
+    height: 87px;
+    left: 0px;
+    top: 839px;
+    background: #263238;
+}
+
+.bottom .home {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 36px;
+    top: 27px;
+}
+
+.bottom .home img {
+    position: absolute;
+    left: 8.33%;
+    right: 8.33%;
+    top: 8.4%;
+    bottom: 8.38%;
+}
+
+.bottom .home span {
+    position: absolute;
+    width: 28px;
+    height: 17px;
+    top: 25px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 16px;
+    text-align: center;
+    color: #FED36A;
+}
+
+.bottom .chat {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 114px;
+    top: 27px;
+}
+
+.bottom .chat img {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+}
+
+.bottom .chat span {
+    position: absolute;
+    width: 23px;
+    height: 17px;
+    top: 27px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 16px;
+    text-align: center;
+    color: #617D8A;
+}
+
+.bottom .ButtonAdd {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    left: 187px;
+    top: 17px;
+    background: #FED36A;
+}
+.bottom .ButtonAdd img {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    left: 14px;
+    top: 14px;
+}
+
+.bottom .Calendar {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 276px;
+    top: 27px;
+}
+
+.bottom .Calendar img {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 12px;
+    top: 2px;
+}
+
+.bottom .Calendar span {
+    position: absolute;
+    width: 43px;
+    height: 17px;
+    top: 23px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 16px;
+    text-align: center;
+    color: #617D8A;
+}
+
+.bottom .Notification {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 352px;
+    top: 27px;
+}
+
+.bottom .Notification img {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 20px;
+    top: 3px;
+}
+
+.bottom .Notification span {
+    position: absolute;
+    width: 55px;
+    height: 17px;
+    top: 23px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 16px;
+    color: #617D8A;
+
+}

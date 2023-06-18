@@ -1,17 +1,12 @@
-/* Указываем box sizing */
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
-
-/* Убираем внутренние отступы */
 ul[class],
 ol[class] {
     padding: 0;
 }
-
-/* Убираем внешние отступы */
 body,
 h1,
 h2,
@@ -28,46 +23,32 @@ dl,
 dd {
     margin: 0;
 }
-
-/* Выставляем основные настройки по-умолчанию для body */
 body {
     min-height: 100vh;
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
 }
-
-/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
 ul[class],
 ol[class] {
     list-style: none;
 }
-
-/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
 a:not([class]) {
     text-decoration-skip-ink: auto;
 }
-
-/* Упрощаем работу с изображениями */
 img {
     max-width: 100%;
     display: block;
 }
-
-/* Указываем понятную периодичность в потоке данных у article*/
 article > * + * {
     margin-top: 1em;
 }
-
-/* Наследуем шрифты для инпутов и кнопок */
 input,
 button,
 textarea,
 select {
     font: inherit;
 }
-
-/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
 @media (prefers-reduced-motion: reduce) {
     * {
         animation-duration: 0.01ms !important;
@@ -77,8 +58,7 @@ select {
     }
 }
 
-
-.signIn {
+.signUp {
     position: relative;
     width: 428px;
     height: 926px;
@@ -90,43 +70,32 @@ select {
     width: 139px;
     height: 91.92px;
     left: 146px;
-    top: 37.5px;
+    top: 37.5px
 }
 
 .Greet {
     position: absolute;
     left: 26px;
     top: 179px;
-}
-
-.Greet h1 {
-    font-family: Inter;
-    font-size: 26px;
-    font-weight: 600;
-    line-height: 15px;
-    letter-spacing: 0em;
-    text-align: left;
     color: #FFFFFF;
+    font-size: 15px;
+    line-height: 15px;
 }
 
-.emailH1 {
+.FullName {
     position: absolute;
-    width: 121px;
-    height: 19px;
+    width: 376px;
+    height: 58px;
     left: 26px;
     top: 218px;
-}
-
-.emailH1 h1 {
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 19px;
-    color: #8CAAB9;;
+    color: #8CAAB9;
 }
 
-.emailInput {
+.NameInput {
     position: absolute;
     width: 376px;
     height: 58px;
@@ -135,23 +104,20 @@ select {
     background: #455A64;
 }
 
-.emailInput img {
+.NameInput img {
     position: absolute;
     width: 24px;
     height: 24px;
-    left: 18px;
-    top: 17px;
+    left: 17px;
+    top: 18px;
 }
 
-
-.emailInput input {
+.NameInput input {
     position: absolute;
-    width: 179px;
+    width: 180px;
     height: 19px;
     left: 68px;
     top: 19px;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 19px;
@@ -160,16 +126,12 @@ select {
     color: white;
 }
 
-.passH1 {
+.EmailAddress {
     position: absolute;
-    width: 83px;
+    width: 121px;
     height: 19px;
     left: 26px;
     top: 338px;
-}
-
-.passH1 h1 {
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -177,7 +139,7 @@ select {
     color: #8CAAB9;
 }
 
-.passField {
+.EmailAddressInput {
     position: absolute;
     width: 376px;
     height: 58px;
@@ -186,7 +148,53 @@ select {
     background: #455A64;
 }
 
-.passField .left {
+.EmailAddressInput img {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 21px;
+    top: 19px;
+}
+
+.EmailAddressInput input {
+    position: absolute;
+    width: 179px;
+    height: 19px;
+    left: 68px;
+    top: 19px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    color: #FFFFFF;
+    border-radius: 1px;
+    background: #455A64;
+}
+
+
+.Password {
+    position: absolute;
+    width: 83px;
+    height: 19px;
+    left: 26px;
+    top: 458px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    color: #8CAAB9;
+}
+
+.PasswordInput {
+    position: absolute;
+    width: 376px;
+    height: 58px;
+    left: 26px;
+    top: 493px;
+    background: #455A64;
+}
+
+.PasswordInput .left {
     position: absolute;
     width: 24px;
     height: 24px;
@@ -194,17 +202,18 @@ select {
     top: 17px;
 }
 
-.passField input {
+.PasswordInput input {
     position: absolute;
-    top: 19px;
+    width: 179px;
+    height: 19px;
     left: 68px;
-    font-family: 'Inter';
-    font-style: normal;
+    top: 19px;
+    color: #FFFFFF;
+    border-radius: 1px;
     background: #455A64;
-    color: white;
 }
 
-.passField .right {
+.PasswordInput .right {
     position: absolute;
     width: 24px;
     height: 24px;
@@ -212,29 +221,48 @@ select {
     top: 17px;
 }
 
-.forgotPass {
+.PrivacyPolicy {
     position: absolute;
-    width: 138px;
-    height: 19px;
-    left: 264px;
-    top: 442px;
+    width: 313px;
+    height: 38px;
+    left: 26px;
+    top: 568px;
 }
 
-.forgotPass button {
+.PrivacyPolicy img {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 2px;
+    top: 2px;
+}
+
+.PrivacyPolicyText {
+    position: absolute;
+    width: 313px;
+    height: 38px;
+    font-size: 14px;
+    line-height: 135%;
+    left: 36px;
+}
+
+.PrivacyPolicyText span {
     color: #8CAAB9;
-    background-color: rgba(28,28,28,0);
+}
+.PrivacyPolicyText .YellowSpan {
+    color: #FED36A;
 }
 
-.loginButton {
+.SignUpButton {
     position: absolute;
     width: 376px;
     height: 67px;
     left: 26px;
-    top: 499px;
+    top: 639px;
     background: #FED36A;
 }
 
-.loginButton button {
+.SignUpButton button {
     position: absolute;
     width: 376px;
     height: 67px;
@@ -242,8 +270,7 @@ select {
     border-radius: 0px;
 }
 
-.loginButton button span {
-    font-family: Inter;
+.SignUpButton button span {
     font-size: 18px;
     font-weight: 600;
     line-height: 38px;
@@ -257,7 +284,7 @@ select {
     width: 111px;
     height: 0px;
     left: 26px;
-    top: 613px;
+    top: 749px;
     border: 1px solid #8CAAB9;
 }
 
@@ -266,7 +293,7 @@ select {
     width: 127px;
     height: 19px;
     left: 150px;
-    top: 603px;
+    top: 739px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -281,7 +308,7 @@ select {
     width: 111px;
     height: 0px;
     left: 291px;
-    top: 613px;
+    top: 749px;
     border: 1px solid #8CAAB9;
 }
 
@@ -292,7 +319,7 @@ select {
     width: 380px;
     height: 71px;
     left: 26px;
-    top: 659px;
+    top: 795px;
     border: 2px solid #FFFFFF;
 }
 
@@ -326,13 +353,12 @@ select {
 }
 
 
-
-.signUp {
+.LogIn {
     position: absolute;
     width: 243px;
     height: 19px;
     left: 93px;
-    top: 751px;
+    top: 887px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -341,10 +367,10 @@ select {
     text-align: center;
 }
 
-.signUp span {
+.LogIn span {
     color: #8CAAB9;
 }
-.signUp button {
+.LogIn button {
     color: #FED36A;
     background: #212832;
 }

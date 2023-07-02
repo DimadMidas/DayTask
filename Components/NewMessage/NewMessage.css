@@ -1,0 +1,374 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+    margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+.NewMessage {
+    position: relative;
+    width: 428px;
+    height: 926px;
+    background: #212832;
+}
+.NewMessage .topMenu {
+    position: absolute;
+    width: 347px;
+    height: 28px;
+    left: 41px;
+    top: 38px;
+}
+
+.topMenu .leftImage {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 2px;
+}
+
+.topMenu h1 {
+    position: absolute;
+    width: 136px;
+    height: 28px;
+    left: 107px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.topMenu .rightImage {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 323px;
+    top: 1px;
+}
+.NewMessage .creteGroup {
+    position: absolute;
+    width: 166px;
+    height: 47px;
+    left: 27px;
+    top: 114px;
+}
+.creteGroup .background {
+    position: absolute;
+    width: 47px;
+    height: 47px;
+}
+
+.creteGroup .profile {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 12px;
+    top: 11px;
+}
+
+.creteGroup h2 {
+    position: absolute;
+    width: 101px;
+    height: 28px;
+    left: 65px;
+    top: 9.5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.NewMessage .userList {
+    position: absolute;
+    width: 372px;
+    height: 677px;
+    left: 27px;
+    top: 181px;
+}
+
+.userList div {
+    position: absolute;
+    width: 372px;
+    height: 47px;
+}
+
+.oneUser h2 {
+    position: absolute;
+    width: 47px;
+    height: 20px;
+    left: 64px;
+    top: 13.5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.oneUser span {
+    position: absolute;
+    width: 12px;
+    height: 20px;
+    left: 358px;
+    top: 13.5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FED36A;
+}
+
+.twoUser {
+    top: 70px;
+}
+
+.twoUser h2 {
+    position: absolute;
+    width: 47px;
+    height: 20px;
+    left: 64px;
+    top: 13.5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.threeUser h2 {
+    position: absolute;
+    width: 47px;
+    height: 20px;
+    left: 64px;
+    top: 13.5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.fourUser h2 {
+    position: absolute;
+    width: 47px;
+    height: 20px;
+    left: 64px;
+    top: 13.5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.fiveUser h2 {
+    position: absolute;
+    width: 47px;
+    height: 20px;
+    left: 64px;
+    top: 13.5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.fiveUser span {
+    position: absolute;
+    width: 12px;
+    height: 20px;
+    left: 358px;
+    top: 13.5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FED36A;
+}
+.sixUser h2 {
+    position: absolute;
+    width: 47px;
+    height: 20px;
+    left: 64px;
+    top: 13.5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.sevenUser h2 {
+    position: absolute;
+    width: 47px;
+    height: 20px;
+    left: 64px;
+    top: 13.5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.eightUser h2 {
+    position: absolute;
+    width: 47px;
+    height: 20px;
+    left: 64px;
+    top: 13.5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.nineUser h2 {
+    position: absolute;
+    width: 47px;
+    height: 20px;
+    left: 64px;
+    top: 13.5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.tenUser h2 {
+    position: absolute;
+    width: 47px;
+    height: 20px;
+    left: 64px;
+    top: 13.5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.tenUser span {
+    position: absolute;
+    width: 12px;
+    height: 20px;
+    left: 358px;
+    top: 13.5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FED36A;
+}
+.fiveUser span {
+    position: absolute;
+    width: 12px;
+    height: 20px;
+    left: 358px;
+    top: 13.5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FED36A;
+}
+
+.threeUser {
+    top: 140px;
+}
+.fourUser {
+    top: 210px;
+}
+.fiveUser {
+    top: 280px;
+}
+.sixUser {
+    top: 350px;
+}
+.sevenUser {
+    top: 420px;
+}
+.eightUser {
+    top: 490px;
+}
+.nineUser {
+    top: 560px;
+}
+.tenUser {
+    top: 630px;
+}

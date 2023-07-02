@@ -1,0 +1,329 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+    margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+.chat {
+    position: relative;
+    width: 428px;
+    height: 926px;
+    background: #212832;
+}
+
+.Chat .topMenu {
+    position: absolute;
+    width: 372px;
+    height: 47px;
+    left: 41px;
+    top: 39px;
+
+}
+
+.topMenu .arrow {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 0px;
+    top: 12px;
+}
+.topMenu .avatar {
+    position: absolute;
+    width: 47px;
+    height: 47px;
+    left: 67px;
+}
+.topMenu h2 {
+    position: absolute;
+    width: 77px;
+    height: 20px;
+    left: 131px;
+    top: 2px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.topMenu span {
+    position: absolute;
+    width: 42px;
+    height: 20px;
+    left: 131px;
+    top: 21px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #B8B8B8;
+}
+
+.topMenu .video {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 305px;
+    top: 13px;
+}
+.topMenu .calling {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 350px;
+    top: 13px;
+}
+.messages {
+    position: absolute;
+    width: 380px;
+    height: 556px;
+    left: 29px;
+    top: 125px;
+}
+
+.messages .oneMessage {
+    position: absolute;
+    width: 268px;
+    height: 47px;
+    background: #263238;
+}
+
+.oneMessage span {
+    position: absolute;
+    width: 231px;
+    height: 20px;
+    left: 12px;
+    top: 13px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.messages .twoMessage {
+    position: absolute;
+    width: 268px;
+    height: 47px;
+    left: 104px;
+    top: 78px;
+    background: #FED36A;
+}
+.twoMessage span {
+    position: absolute;
+    width: 231px;
+    height: 20px;
+    left: 12px;
+    top: 13px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #212832;
+}
+
+.messages .threeMessage {
+    position: absolute;
+    width: 268px;
+    height: 47px;
+    top: 180px;
+    background: #263238;
+}
+.threeMessage span {
+    position: absolute;
+    width: 231px;
+    height: 20px;
+    left: 12px;
+    top: 13px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.messages .fourMessage {
+    position: absolute;
+    width: 329px;
+    height: 75px;
+    top: 244px;
+    background: #263238;
+}
+
+.fourMessage span {
+    position: absolute;
+    width: 274px;
+    height: 39px;
+    left: 12px;
+    top: 18px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.messages .fiveMessage {
+    position: absolute;
+    width: 268px;
+    height: 146px;
+    top: 333px;
+}
+.messages .sixMessage {
+    position: absolute;
+    width: 268px;
+    height: 47px;
+    left: 112px;
+    top: 523px;
+    background: #FED36A;
+}
+.sixMessage span {
+    position: absolute;
+    width: 187px;
+    height: 20px;
+    left: 12px;
+    top: 13px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #212832;
+}
+.bottomPanel {
+    position: absolute;
+    width: 384px;
+    height: 57px;
+    left: 22px;
+    top: 841px;
+}
+.bottomPanel .typeMessage {
+    position: absolute;
+    width: 320px;
+    height: 57px;
+    background-color: #263238
+}
+
+.typeMessage .element {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 13px;
+    top: 17px;
+}
+.typeMessage input {
+    position: absolute;
+    width: 124px;
+    height: 20px;
+    left: 57px;
+    top: 19px;
+    background: transparent;
+    border: 1px;
+    border: none;
+    color: #8CAAB9;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: #263238;
+    z-index: 50;
+}
+.typeMessage .send {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 279px;
+    top: 17px;
+}
+
+.bottomPanel .micro {
+    position: absolute;
+    width: 57px;
+    height: 57px;
+    left: 327px;
+    background: #263238;
+}
+.micro img {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 17px;
+    top: 17px;
+}

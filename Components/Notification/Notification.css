@@ -1,0 +1,475 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+    margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+.Notification {
+    position: relative;
+    width: 428px;
+    height: 926px;
+    background: #212832;
+}
+
+.Notification .topMenu {
+    position: absolute;
+    width: 358px;
+    height: 28px;
+    left: 41px;
+    top: 38px;
+}
+
+.topMenu h1 {
+    position: absolute;
+    width: 90px;
+    height: 28px;
+    left: 114px;
+    top: 0px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.Notification .newNotification {
+    position: absolute;
+    width: 23.1225rem;
+    height: 18.8075rem;
+    flex-shrink: 0;
+    top: 6rem;
+    left: 2.56rem;
+
+}
+.newNotification .main {
+    color: #FFF;
+    font-size: 1.25rem;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 1.71875rem;
+}
+
+.newNotification .one-task {
+    position: absolute;
+    width: 23.1225rem;
+    height: 2.9375rem;
+    top: 2.75rem;
+}
+.one-task .img {
+    width: 2.9375rem;
+    height: 2.9375rem;
+
+}
+
+.one-task h2 .name {
+    color: white;
+    font-size: 1rem;
+}
+
+.one-task h2 {
+    color: #8CAAB9;
+    position: absolute;
+    width: 14.1875rem;
+    height: 2.4375rem;
+    font-size: 0.875rem;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 1.21875rem;
+    top: 0.25rem;
+    left: 4rem;
+}
+
+.one-task h2 .yellow {
+    color: #FED36A;
+    font-size: 0.875rem;
+}
+
+.one-task .time {
+    position: absolute;
+    width: 1.625rem;
+    height: 1.25rem;
+    color: #FFF;
+    font-size: 0.5rem;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 1.21875rem;
+    top: 0.84375rem;
+    left: 21.4975rem;
+}
+
+.newNotification .two-task {
+    position: absolute;
+    width: 23.1225rem;
+    height: 2.9375rem;
+    top: 7.1275rem;
+}
+.newNotification .three-task {
+    position: absolute;
+    width: 23.1225rem;
+    height: 2.9375rem;
+    top: 11.5025rem;
+}
+.newNotification .four-task {
+    position: absolute;
+    width: 23.1225rem;
+    height: 2.9375rem;
+    top: 15.88rem;
+}
+
+
+.two-task .img {
+    width: 2.9375rem;
+    height: 2.9375rem;
+
+}
+
+.two-task h2 .name {
+    color: white;
+    font-size: 1rem;
+}
+
+.two-task h2 {
+    color: #8CAAB9;
+    position: absolute;
+    width: 14.1875rem;
+    height: 2.4375rem;
+    font-size: 0.875rem;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 1.21875rem;
+    top: 0.25rem;
+    left: 4rem;
+}
+
+.two-task h2 .yellow {
+    color: #FED36A;
+    font-size: 0.875rem;
+}
+
+.two-task .time {
+    position: absolute;
+    width: 1.625rem;
+    height: 1.25rem;
+    color: #FFF;
+    font-size: 0.5rem;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 1.21875rem;
+    top: 0.84375rem;
+    left: 21.4975rem;
+}
+
+
+.three-task .img {
+    width: 2.9375rem;
+    height: 2.9375rem;
+
+}
+
+.three-task h2 .name {
+    color: white;
+    font-size: 1rem;
+}
+
+.three-task h2 {
+    color: #8CAAB9;
+    position: absolute;
+    width: 14.1875rem;
+    height: 2.4375rem;
+    font-size: 0.875rem;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 1.21875rem;
+    top: 0.25rem;
+    left: 4rem;
+}
+
+.three-task h2 .yellow {
+    color: #FED36A;
+    font-size: 0.875rem;
+}
+
+.three-task .time {
+    position: absolute;
+    width: 1.625rem;
+    height: 1.25rem;
+    color: #FFF;
+    font-size: 0.5rem;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 1.21875rem;
+    top: 0.84375rem;
+    left: 21.4975rem;
+}
+
+.four-task .img {
+    width: 2.9375rem;
+    height: 2.9375rem;
+
+}
+
+.four-task h2 .name {
+    color: white;
+    font-size: 1rem;
+}
+
+.four-task h2 {
+    color: #8CAAB9;
+    position: absolute;
+    width: 14.1875rem;
+    height: 2.4375rem;
+    font-size: 0.875rem;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 1.21875rem;
+    top: 0.25rem;
+    left: 4rem;
+}
+
+.four-task h2 .yellow {
+    color: #FED36A;
+    font-size: 0.875rem;
+}
+
+.four-task .time {
+    position: absolute;
+    width: 1.625rem;
+    height: 1.25rem;
+    color: #FFF;
+    font-size: 0.5rem;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 1.21875rem;
+    top: 0.84375rem;
+    left: 21.4975rem;
+}
+
+.Notification .Earlier {
+    position: relative;
+    width: 23.3725rem;
+    height: 14.4375rem;
+    top: 27.06rem;
+    left: 2.56rem;
+}
+
+.Earlier .main {
+    color: #FFF;
+    font-size: 1.25rem;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 1.71875rem;
+}
+
+.Earlier .one-earlier {
+    position: relative;
+    width: 23.3725rem;
+    height: 2.9375rem;
+    top: 1rem;
+}
+
+.one-earlier h2 .name {
+    color: #FFF;
+    font-size: 1rem;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 1.21875rem;
+}
+
+.one-earlier h2 {
+    position: absolute;
+    color: #8CAAB9;
+    font-size: 0.875rem;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 1.21875rem;
+    top: 0.25rem;
+    left: 4rem;
+}
+.one-earlier h2 .yellow {
+    color: #FED36A;
+    font-size: 0.875rem;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 1.21875rem;
+}
+
+.one-earlier .time {
+    position: absolute;
+    width: 1.625rem;
+    height: 1.25rem;
+    color: #FFF;
+    font-size: 0.5rem;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 1.21875rem;
+    top: 0.84375rem;
+    left: 21.4975rem;
+}
+
+.Earlier .two-earlier {
+    position: relative;
+    width: 23.3725rem;
+    height: 2.9375rem;
+    top: 2.9375rem;
+}
+.Earlier .three-earlier {
+    position: relative;
+    width: 23.3725rem;
+    height: 2.9375rem;
+    top: 4.3775rem;
+}
+
+
+.two-earlier h2 .name {
+    color: #FFF;
+    font-size: 1rem;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 1.21875rem;
+}
+
+.two-earlier h2 {
+    position: absolute;
+    color: #8CAAB9;
+    font-size: 0.875rem;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 1.21875rem;
+    top: 0.25rem;
+    left: 4rem;
+}
+.two-earlier h2 .yellow {
+    color: #FED36A;
+    font-size: 0.875rem;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 1.21875rem;
+}
+
+.two-earlier .time {
+    position: absolute;
+    width: 1.625rem;
+    height: 1.25rem;
+    color: #FFF;
+    font-size: 0.5rem;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 1.21875rem;
+    top: 0.84375rem;
+    left: 21.4975rem;
+}
+
+.three-earlier h2 .name {
+    color: #FFF;
+    font-size: 1rem;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 1.21875rem;
+}
+
+.three-earlier h2 {
+    position: absolute;
+    color: #8CAAB9;
+    font-size: 0.875rem;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 1.21875rem;
+    top: 0.25rem;
+    left: 4rem;
+}
+.three-earlier h2 .yellow {
+    color: #FED36A;
+    font-size: 0.875rem;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 1.21875rem;
+}
+
+.three-earlier .time {
+    position: absolute;
+    width: 1.625rem;
+    height: 1.25rem;
+    color: #FFF;
+    font-size: 0.5rem;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 1.21875rem;
+    top: 0.84375rem;
+    left: 21.4975rem;
+}
+

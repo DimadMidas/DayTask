@@ -1,0 +1,330 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+    margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+.Profile {
+    width: 428px;
+    height: 926px;
+    background-color:#212832;;
+}
+
+.Profile .topMenu {
+    position: absolute;
+    width: 358px;
+    height: 28px;
+    left: 41px;
+    top: 38px;
+}
+.topMenu .leftImage {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 1px;
+}
+.topMenu h2 {
+    position: absolute;
+    width: 90px;
+    height: 28px;
+    left: 130px;
+    top: px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.Profile .Avatar {
+    position: relative;
+    top: 7.19rem;
+    left: 9.25rem;
+    width: 8.3125rem;
+    height: 8.3125rem;
+}
+
+.Avatar img {
+    position: absolute;
+}
+
+.Avatar .ava {
+    top: 0.19rem;
+    left: 0.19rem;
+}
+
+.Avatar .avaBut {
+    top: 6.06rem;
+    left: 6rem;
+}
+.Avatar .avaPlus {
+    top: 6.5rem;
+    left: 6.44rem;
+}
+
+.profileForm {
+    position: absolute;
+    height: 144.65rem;
+    width: 22.75rem;
+    top: 18.75rem;
+    left: 2rem;
+}
+.profileForm div {
+    width: 22.75rem;
+    height: 3.375rem;
+    background: #455A64;
+    margin-top: 1.63rem;
+}
+
+
+.Login .leftImage {
+    position: absolute;
+    left: 0.87rem;
+    top: 2.57rem;
+}
+.Login .rightImage {
+    position: absolute;
+    left: 20.37rem;
+    top: 2.57rem;
+}
+
+.profileForm .Login input {
+    height: 1.2rem;
+    position: absolute;
+    top: 2.69rem;
+    left: 3.25rem;
+    background-color: transparent;
+    border: 1px;
+    color: #FFF;
+    font-size: 1.125rem;
+    font-family: Inter;
+    line-height: 1.17856rem;
+}
+
+.Email .leftImage {
+    position: absolute;
+    left: 0.87rem;
+    top: 0.94rem;
+}
+.Email .rightImage {
+    position: absolute;
+    left: 20.37rem;
+    top: 0.94rem;
+}
+
+.profileForm .Email input {
+    height: 1.2rem;
+    position: absolute;
+    top: 1.06rem;
+    left: 3.25rem;
+    background-color: transparent;
+    border: 1px;
+    color: #FFF;
+    font-size: 1.125rem;
+    font-family: Inter;
+    line-height: 1.17856rem;
+}
+.Email {
+    position: relative; /* Добавлено */
+}
+
+.Password .leftImage {
+    position: absolute;
+    left: 0.87rem;
+    top: 0.94rem;
+}
+.Password .rightImage {
+    position: absolute;
+    left: 20.37rem;
+    top: 0.94rem;
+}
+
+.profileForm .Password input {
+    height: 1.2rem;
+    position: absolute;
+    top: 1.06rem;
+    left: 3.25rem;
+    background-color: transparent;
+    border: 1px;
+    color: #FFF;
+    font-size: 1.125rem;
+    font-family: Inter;
+    line-height: 1.17856rem;
+}
+.Password {
+    position: relative; /* Добавлено */
+}
+
+.Task .leftImage {
+    position: absolute;
+    left: 0.87rem;
+    top: 0.94rem;
+}
+.Task .rightImage {
+    position: absolute;
+    left: 20.37rem;
+    top: 0.94rem;
+}
+
+.profileForm .Task input {
+    height: 1.2rem;
+    position: absolute;
+    top: 1.06rem;
+    left: 3.25rem;
+    background-color: transparent;
+    border: 1px;
+    color: #FFF;
+    font-size: 1.125rem;
+    font-family: Inter;
+    line-height: 1.17856rem;
+}
+.Task {
+    position: relative; /* Добавлено */
+}
+
+.Privacy .leftImage {
+    position: absolute;
+    left: 0.87rem;
+    top: 0.94rem;
+}
+.Privacy .rightImage {
+    position: absolute;
+    left: 20.37rem;
+    top: 0.94rem;
+}
+
+.profileForm .Privacy input {
+    height: 1.2rem;
+    position: absolute;
+    top: 1.06rem;
+    left: 3.25rem;
+    background-color: transparent;
+    border: 1px;
+    color: #FFF;
+    font-size: 1.125rem;
+    font-family: Inter;
+    line-height: 1.17856rem;
+}
+.Privacy {
+    position: relative; /* Добавлено */
+}
+
+.Setting .leftImage {
+    position: absolute;
+    left: 0.87rem;
+    top: 0.94rem;
+}
+.Setting .rightImage {
+    position: absolute;
+    left: 20.37rem;
+    top: 0.94rem;
+}
+
+.profileForm .Setting input {
+    height: 1.2rem;
+    position: absolute;
+    top: 1.06rem;
+    left: 3.25rem;
+    background-color: transparent;
+    border: 1px;
+    color: #FFF;
+    font-size: 1.125rem;
+    font-family: Inter;
+    line-height: 1.17856rem;
+}
+.Setting {
+    position: relative; /* Добавлено */
+}
+
+.LogOutButton {
+    position: absolute;
+    width: 22.75rem;
+    height: 3.375rem;
+    top: 50rem;
+    left: 2rem;
+    background: #FED36A;
+}
+
+.LogOutButton button {
+    background: #FED36A;
+    width: 22.75rem;
+    height: 3.375rem;
+    border: 1px;
+}
+
+.LogOutButton img {
+    position: absolute;
+    top: 0.94rem;
+    left: 7.81rem;
+}
+.LogOutButton button span {
+    color: #212832;
+    font-size: 1.125rem;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 1.17856rem;
+}

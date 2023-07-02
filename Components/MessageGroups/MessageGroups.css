@@ -1,0 +1,644 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+    margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+.Messages {
+    position: relative;
+    width: 428px;
+    height: 926px;
+    background: #212832;
+}
+
+.Messages .topTitle {
+    position: absolute;
+    width: 347px;
+    height: 28px;
+    left: 41px;
+    top: 39px;
+}
+
+.topTitle .leftImage {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 1px;
+}
+
+.topTitle h1 {
+    position: absolute;
+    width: 98px;
+    height: 28px;
+    left: 106px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.topTitle .rightImage {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 303px;
+    top: 1px
+}
+
+.selectPanel {
+    position: absolute;
+    width: 370px;
+    height: 47px;
+    left: 29px;
+    top: 102px;
+}
+.selectPanel .mainChat {
+    position: absolute;
+    width: 175px;
+    height: 47px;
+    background: #263238;
+}
+
+.mainChat button {
+    position: absolute;
+    width: 175px;
+    height: 47px;
+    background: #263238;
+    border: 1px;
+}
+.mainChat span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+.selectPanel .groups {
+    position: absolute;
+    width: 175px;
+    height: 47px;
+    left: 195px;
+    background: #FED36A;
+}
+
+.groups button {
+    position: absolute;
+    width: 175px;
+    height: 47px;
+    background: #FED36A;
+    border: 1px;
+}
+.groups span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    color: #212832;
+}
+
+.chatList {
+    position: absolute;
+    width: 370px;
+    height: 447px;
+    left: 29px;
+    top: 181px;
+}
+
+.chatList .oneChat {
+    position: absolute;
+    width: 370px;
+    height: 47px;
+}
+
+.oneChat img {
+    position: absolute;
+    width: 47px;
+    height: 47px;
+}
+
+.oneChat h1 {
+    position: absolute;
+    width: 127px;
+    height: 20px;
+    left: 64px;
+    top: 4px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.oneChat h2 {
+    position: absolute;
+    width: 251px;
+    height: 20px;
+    left: 64px;
+    top: 23px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #B8B8B8;
+}
+.oneChat span {
+    position: absolute;
+    width: 26px;
+    height: 20px;
+    left: 334px;
+    top: 11px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.chatList .twoChat {
+    position: absolute;
+    width: 371px;
+    height: 47px;
+    top: 80px;
+}
+
+.twoChat img {
+    position: absolute;
+    width: 47px;
+    height: 47px;
+}
+
+.twoChat h1 {
+    position: absolute;
+    width: 127px;
+    height: 20px;
+    left: 64px;
+    top: 4px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.twoChat h2 {
+    position: absolute;
+    width: 251px;
+    height: 20px;
+    left: 64px;
+    top: 23px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #B8B8B8;
+}
+.twoChat span {
+    position: absolute;
+    width: 26px;
+    height: 20px;
+    left: 334px;
+    top: 11px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.chatList .threeChat {
+    position: absolute;
+    width: 369px;
+    height: 47px;
+    top: 160px;
+}
+.threeChat img {
+    position: absolute;
+    width: 47px;
+    height: 47px;
+}
+
+.threeChat h1 {
+    position: absolute;
+    width: 127px;
+    height: 20px;
+    left: 64px;
+    top: 4px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.threeChat h2 {
+    position: absolute;
+    width: 251px;
+    height: 20px;
+    left: 64px;
+    top: 23px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #B8B8B8;
+}
+.threeChat span {
+    position: absolute;
+    width: 26px;
+    height: 20px;
+    left: 334px;
+    top: 11px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.chatList .fourChat {
+    position: absolute;
+    width: 369px;
+    height: 47px;
+    top: 240px;
+}
+.fourChat img {
+    position: absolute;
+    width: 47px;
+    height: 47px;
+}
+
+.fourChat h1 {
+    position: absolute;
+    width: 127px;
+    height: 20px;
+    left: 64px;
+    top: 4px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.fourChat h2 {
+    position: absolute;
+    width: 251px;
+    height: 20px;
+    left: 64px;
+    top: 23px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #B8B8B8;
+}
+.fourChat span {
+    position: absolute;
+    width: 26px;
+    height: 20px;
+    left: 334px;
+    top: 11px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.chatList .fiveChat {
+    position: absolute;
+    width: 371px;
+    height: 47px;
+    top: 320px;
+}
+.fiveChat img {
+    position: absolute;
+    width: 47px;
+    height: 47px;
+}
+
+.fiveChat h1 {
+    position: absolute;
+    width: 127px;
+    height: 20px;
+    left: 64px;
+    top: 4px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.fiveChat h2 {
+    position: absolute;
+    width: 251px;
+    height: 20px;
+    left: 64px;
+    top: 23px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #B8B8B8;
+}
+.fiveChat span {
+    position: absolute;
+    width: 26px;
+    height: 20px;
+    left: 334px;
+    top: 11px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.chatList .sixChat {
+    position: absolute;
+    width: 370px;
+    height: 47px;
+    top: 400px;
+}
+.sixChat img {
+    position: absolute;
+    width: 47px;
+    height: 47px;
+}
+
+.sixChat h1 {
+    position: absolute;
+    width: 127px;
+    height: 20px;
+    left: 64px;
+    top: 4px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.sixChat h2 {
+    position: absolute;
+    width: 251px;
+    height: 20px;
+    left: 64px;
+    top: 23px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #B8B8B8;
+}
+.sixChat span {
+    position: absolute;
+    width: 26px;
+    height: 20px;
+    left: 334px;
+    top: 11px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.bottomPanel {
+    position: absolute;
+    width: 428px;
+    height: 87px;
+    left: 0px;
+    top: 839px;
+    background: #263238;
+}
+.bottomPanel .Home {
+    position: absolute;
+    width: 28px;
+    height: 45px;
+    left: 36px;
+    top: 27px;
+}
+
+.Home img {
+    position: absolute;
+    width: 28px;
+    height: 24px;
+    left: 4px;
+    top: 1px;
+}
+.Home span {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    top: 27px;
+    left: 3px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 16px;
+    text-align: center;
+    color: #617D8A;
+}
+
+.bottomPanel .Chat {
+    position: absolute;
+    width: 24px;
+    height: 46px;
+    left: 114px;
+    top: 27px;
+}
+
+.Chat img {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+}
+.Chat span {
+    position: absolute;
+    width: 23px;
+    height: 17px;
+    left: 1px;
+    top: 27px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 16px;
+    text-align: center;
+    color: #FED36A;
+}
+
+.bottomPanel .Plus {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    left: 187px;
+    top: 17px;
+    background: #FED36A;
+}
+.Plus button {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    background: #FED36A;
+    border: 1px;
+}
+.Plus button img {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 0.875rem;
+    top: 0.875rem;
+}
+
+.bottomPanel .Calendar {
+    position: absolute;
+    width: 43px;
+    height: 44px;
+    left: 276px;
+    top: 27px;
+}
+.Calendar img {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 11px;
+    top: 1px;
+}
+.Calendar span {
+    position: absolute;
+    width: 43px;
+    height: 17px;
+    top: 27px;
+    left: 2px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 16px;
+    text-align: center;
+    color: #617D8A;
+}
+.bottomPanel .Notification {
+    position: absolute;
+    width: 55px;
+    height: 44px;
+    left: 352px;
+    top: 27px;
+}
+.Notification img {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 20px;
+    top: 1px;
+}
+.Notification span {
+    position: absolute;
+    width: 55px;
+    height: 17px;
+    left: 5px;
+    top: 27px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 16px;
+    text-align: center;
+    color: #617D8A;
+}

@@ -1,0 +1,473 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+    margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+
+.Schedule {
+    position: relative;
+    width: 428px;
+    height: 926px;
+    background: #212832;
+}
+.Schedule .topMenu {
+    position: absolute;
+    width: 358px;
+    height: 28px;
+    left: 41px;
+    top: 38px;
+}
+.topMenu .leftImage {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 1px;
+}
+.topMenu h2 {
+    position: absolute;
+    width: 90px;
+    height: 28px;
+    left: 130px;
+    top: px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.topMenu .rightImage {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 334px;
+    top: 1px;
+}
+.Schedule .Calendar {
+    position: absolute;
+    width: 395px;
+    height: 123px;
+    left: 29px;
+    top: 105px;
+}
+
+.Calendar h1 {
+    position: absolute;
+    width: 100px;
+    height: 28px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.Calendar div {
+    position: absolute;
+    width: 45px;
+    height: 69px;
+    top: 54px;
+    background: #263238;
+}
+
+.Calendar .tue {
+    left: 60px;
+}
+
+.Calendar .wed {
+    left: 120px;
+}
+
+.Calendar .thu {
+    left: 180px;
+    background: #FED36A;
+}
+.Calendar .thu h1 {
+    color: #212832;
+}
+.Calendar .thu h2{
+    color: #212832;
+}
+.Calendar .fri {
+    left: 240px;
+}
+.Calendar .sat {
+    left: 300px;
+}
+.Calendar .sun {
+    left: 360px;
+}
+
+
+.Calendar div h1 {
+    position: absolute;
+    width: 10px;
+    height: 23px;
+    left: 17px;
+    top: 14.64px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18.8182px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.Calendar div h2 {
+    position: absolute;
+    width: 20px;
+    height: 17px;
+    left: 12px;
+    top: 37.64px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 9.40909px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.Schedule .todayTask {
+    position: absolute;
+    width: 370px;
+    height: 486px;
+    left: 29px;
+    top: 260px;
+}
+.todayTask div {
+    position: absolute;
+    width: 370px;
+    height: 72px;
+    background: #263238;
+}
+
+.todayTask .userInt {
+    top: 54px;
+    background: #FED36A;
+}
+.todayTask .wireframe {
+    top: 144px;
+}
+
+.todayTask .icons {
+    top: 234px
+}
+.todayTask .mockups {
+    top: 324px
+}
+.todayTask .testing {
+    top: 419px
+ }
+
+.todayTask .userInt h1 {
+    position: absolute;
+    width: 135px;
+    height: 22px;
+    left: 22px;
+    top: 13px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #212832;
+}
+.todayTask .userInt h2 {
+    position: absolute;
+    width: 76px;
+    height: 22px;
+    left: 22px;
+    top: 37px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: #212832;
+}
+
+.todayTask div h1 {
+    position: absolute;
+    width: 90px;
+    height: 22px;
+    left: 42px;
+    top: 13px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.todayTask div h2 {
+    position: absolute;
+    width: 76px;
+    height: 22px;
+    left: 42px;
+    top: 37px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: #D2D2D2;
+}
+
+.todayTask .ava1 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 303px;
+    top: 27px;
+}
+.todayTask .ava2 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 316px;
+    top: 27px;
+}
+.todayTask .ava3 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 329px;
+    top: 27px;
+}
+
+.todayTask .icons .ava1 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 316px;
+    top: 27px;
+}
+
+.todayTask .testing .ava1 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 309px;
+    top: 27px;
+}
+.todayTask .testing .ava2 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 322px;
+    top: 27px;
+}
+
+.bottomPanel {
+    position: absolute;
+    width: 428px;
+    height: 87px;
+    left: 0px;
+    top: 839px;
+    background: #263238;
+}
+.bottomPanel .Home {
+    position: absolute;
+    width: 28px;
+    height: 45px;
+    left: 36px;
+    top: 27px;
+}
+
+.Home img {
+    position: absolute;
+    width: 28px;
+    height: 24px;
+    left: 4px;
+    top: 1px;
+}
+.Home span {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    top: 27px;
+    left: 3px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 16px;
+    text-align: center;
+    color: #617D8A;
+}
+
+.bottomPanel .Chat {
+    position: absolute;
+    width: 24px;
+    height: 46px;
+    left: 114px;
+    top: 27px;
+}
+
+.Chat img {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+}
+.Chat span {
+    position: absolute;
+    width: 23px;
+    height: 17px;
+    left: 1px;
+    top: 27px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 16px;
+    text-align: center;
+    color: #617D8A;
+}
+
+.bottomPanel .Plus {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    left: 187px;
+    top: 17px;
+    background: #FED36A;
+}
+.Plus button {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    background: #FED36A;
+    border: 1px;
+}
+.Plus button img {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 0.875rem;
+    top: 0.875rem;
+}
+
+.bottomPanel .Calendar {
+    position: absolute;
+    width: 43px;
+    height: 44px;
+    left: 276px;
+    top: 27px;
+}
+.Calendar img {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 11px;
+    top: 1px;
+}
+.Calendar span {
+    position: absolute;
+    width: 43px;
+    height: 17px;
+    top: 27px;
+    left: 2px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 16px;
+    text-align: center;
+    color: #FED36A;
+}
+.bottomPanel .Notification {
+    position: absolute;
+    width: 55px;
+    height: 44px;
+    left: 352px;
+    top: 27px;
+}
+.Notification img {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 20px;
+    top: 1px;
+}
+.Notification span {
+    position: absolute;
+    width: 55px;
+    height: 17px;
+    left: 5px;
+    top: 27px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 16px;
+    text-align: center;
+    color: #617D8A;
+}

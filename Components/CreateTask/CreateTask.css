@@ -1,0 +1,397 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+    margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+
+.CreateTask {
+    width: 26.75rem;
+    height: 57.875rem;
+    background: #212832;
+}
+
+.CreateTask .topMenu {
+    position: absolute;
+    width: 347px;
+    height: 28px;
+    left: 41px;
+    top: 39px;
+}
+
+.topMenu img {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 1px;
+}
+.topMenu h1 {
+    color: #FFF;
+    text-align: center;
+    font-size: 1.25rem;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 1.71875rem;
+    left: 106px;
+}
+
+.CreateTask .taskTitle {
+    position: absolute;
+    width: 358px;
+    height: 85px;
+    left: 41px;
+    top: 105px;
+}
+
+.taskTitle h1 {
+    color: #FFF;
+    font-size: 1.25rem;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 1.71875rem;
+}
+
+.taskTitle div {
+    position: absolute;
+    width: 22.375rem;
+    height: 3rem;
+    background: #455A64;
+    top: 2.31rem;
+}
+.taskTitle div h2 {
+    position: absolute;
+    color: #FFF;
+    font-size: 1.125rem;
+    font-family: Inter;
+    line-height: 1.17856rem;
+    left: 1.5rem;
+    top: 0.88rem;
+}
+
+.CreateTask .taskDetails {
+    position: absolute;
+    width: 22.375rem;
+    height: 8.315rem;
+    top: 13.69rem;
+    left: 2.56rem;
+}
+
+.taskDetails h1 {
+    color: #FFF;
+    font-size: 1.25rem;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 1.71875rem;
+}
+
+.taskDetails div {
+    width: 22.375rem;
+    height: 5.125rem;
+    position: absolute;
+    top: 3.19rem;
+    background: #455A64;
+}
+.taskDetails div h2 {
+    display: flex;
+    width: 19.5rem;
+    height: 3.8125rem;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #FFF;
+    font-size: 0.6875rem;
+    font-family: Inter;
+    line-height: 1.17856rem;
+    position: absolute;
+    top: 0.44rem;
+    left: 1.5rem;
+}
+
+.CreateTask .addTeam {
+    position: absolute;
+    width: 22.37rem;
+    height: 5.62rem;
+    top: 23.44rem;
+    left: 2.56rem;
+}
+
+.addTeam h1 {
+    color: #FFF;
+    font-size: 1.25rem;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 1.71875rem;
+}
+.addTeam .oneTeam {
+    position: absolute;
+    width: 9.375rem;
+    height: 2.5625rem;
+    background: #455A64;
+    top: 3.06rem;
+}
+
+.addTeam .twoTeam {
+    position: absolute;
+    width: 9.375rem;
+    height: 2.5625rem;
+    background: #455A64;
+    top: 3.06rem;
+    left: 9.935rem;
+}
+
+.addTeam .addButton {
+    position: absolute;
+    width: 2.5625rem;
+    height: 2.5625rem;
+    top: 3.06rem;
+    left: 19.81rem;
+}
+
+.oneTeam .avaImg {
+    position: absolute;
+    width: 1.25rem;
+    height: 1.25rem;
+    top: 0.69rem;
+    left: 0.69rem;
+}
+.oneTeam h2 {
+    position: absolute;
+    top: 0.44rem;
+    left: 2.25rem;
+    color: #FFF;
+    font-size: 0.875rem;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 1.71875rem;
+}
+.oneTeam .closeImg {
+    position: absolute;
+    width: 1.25rem;
+    height: 1.25rem;
+    top: 0.69rem;
+    left: 7.69rem;
+}
+
+.twoTeam .avaImg {
+    position: absolute;
+    width: 1.25rem;
+    height: 1.25rem;
+    top: 0.69rem;
+    left: 0.69rem;
+}
+.twoTeam h2 {
+    position: absolute;
+    top: 0.44rem;
+    left: 2.25rem;
+    color: #FFF;
+    font-size: 0.875rem;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 1.71875rem;
+}
+.twoTeam .closeImg {
+    position: absolute;
+    width: 1.25rem;
+    height: 1.25rem;
+    top: 0.69rem;
+    left: 7.69rem;
+}
+
+.addButton {
+    background: #FED36A;
+}
+.addButton img {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 0.56rem;
+    left: 0.56rem;
+}
+
+.CreateTask .timeData {
+    position: absolute;
+    width: 22.37rem;
+    height: 5.6225rem;
+    top: 30.38rem;
+    left: 2.56rem;
+}
+.timeData h1 {
+    color: #FFF;
+    font-size: 1.25rem;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 1.71875rem;
+}
+
+.timeData .time {
+    position: absolute;
+    width: 11rem;
+    height: 2.5625rem;
+    background: #455A64;
+    top: 3.06rem;
+}
+.timeData .data {
+    position: absolute;
+    width: 11rem;
+    height: 2.5625rem;
+    background: #455A64;
+    left: 11.37rem;
+    top: 3.06rem;
+}
+.time h2 {
+    position: absolute;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.125rem;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 1.71875rem;
+    left: 4.2425rem;
+    top: 0.44rem;
+}
+.time div {
+    width: 2.5625rem;
+    height: 2.5625rem;
+    background: #FED36A;
+}
+.time div img {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 0.56rem;
+    left: 0.56rem;
+}
+
+.data h2 {
+    position: absolute;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.125rem;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 1.71875rem;
+    left: 4.2425rem;
+    top: 0.44rem;
+}
+.data div {
+    width: 2.5625rem;
+    height: 2.5625rem;
+    background: #FED36A;
+}
+.data div img {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 0.56rem;
+    left: 0.56rem;
+}
+.AddNew {
+    position: absolute;
+    width: 4.9375rem;
+    height: 1.5rem ;
+    top: 39.06rem;
+    left: 11.31rem;
+}
+.AddNew h1 {
+    color: #FFF;
+    text-align: center;
+    font-size: 1.125rem;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+.CreateTask .ButtonCreate {
+    position: absolute;
+    width: 22.375rem;
+    height: 4.1875rem;
+    top: 43.19rem;
+    left: 2.19rem;
+    background: #FED36A;
+}
+
+.ButtonCreate button {
+    width: 22.375rem;
+    height: 4.1875rem;
+    background: #FED36A;
+    border: 1px;
+}
+.ButtonCreate button span {
+    color: #000;
+    font-size: 1.125rem;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 2.375rem;
+}
